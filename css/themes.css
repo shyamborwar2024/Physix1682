@@ -1,0 +1,91 @@
+:root {
+    /* Light Mode Palette */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f0f4f9;
+    --bg-tertiary: #e2e9f3;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --accent-primary: #0a58ca;
+    --accent-secondary: #06b6d4;
+    --accent-tertiary: #7c3aed;
+    --accent-gradient: linear-gradient(135deg, #0a58ca 0%, #06b6d4 100%);
+    --accent-gradient-purple: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+    --accent-gradient-fusion: linear-gradient(135deg, #0a58ca 0%, #7c3aed 100%);
+    --border-color: #dfe6f0;
+    --border-glow: rgba(6, 182, 212, 0.3);
+    --shadow-sm: 0 2px 8px rgba(10, 88, 202, 0.08);
+    --shadow-md: 0 4px 20px rgba(10, 88, 202, 0.12);
+    --shadow-lg: 0 10px 40px rgba(10, 88, 202, 0.15);
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(223, 230, 240, 0.8);
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --info: #0a58ca;
+    --grid-color: rgba(6, 182, 212, 0.06);
+    --atom-glow: rgba(10, 88, 202, 0.4);
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'Outfit', 'Inter', sans-serif;
+    --font-mono: 'Fira Code', 'Courier New', monospace;
+}
+
+[data-theme="dark"] {
+    /* Dark Mode Palette - Deep Space Navy / Futuristic */
+    --bg-primary: #070b14;
+    --bg-secondary: #0f1623;
+    --bg-tertiary: #162032;
+    --bg-elevated: #1a2436;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-primary: #0a58ca;
+    --accent-secondary: #06b6d4;
+    --accent-tertiary: #7c3aed;
+    --accent-gradient: linear-gradient(135deg, #0a58ca 0%, #06b6d4 100%);
+    --accent-gradient-purple: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+    --accent-gradient-fusion: linear-gradient(135deg, #0a58ca 0%, #7c3aed 100%);
+    --border-color: rgba(6, 182, 212, 0.25);
+    --border-glow: rgba(6, 182, 212, 0.6);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 20px rgba(6, 182, 212, 0.25);
+    --shadow-lg: 0 10px 40px rgba(124, 58, 237, 0.35);
+    --glass-bg: rgba(15, 22, 35, 0.75);
+    --glass-border: rgba(6, 182, 212, 0.3);
+    --grid-color: rgba(6, 182, 212, 0.15);
+    --atom-glow: rgba(6, 182, 212, 0.6);
+}
+
+[data-theme="system"] {
+    /* System - auto-switch based on OS preference */
+}
+
+@media (prefers-color-scheme: dark) {
+    [data-theme="system"] {
+        --bg-primary: #070b14;
+        --bg-secondary: #0f1623;
+        --bg-tertiary: #162032;
+        --bg-elevated: #1a2436;
+        --text-primary: #e2e8f0;
+        --text-secondary: #94a3b8;
+        --text-muted: #64748b;
+        --accent-primary: #3b82f6;
+        --accent-secondary: #06b6d4;
+        --accent-tertiary: #8b5cf6;
+        --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+        --accent-gradient-purple: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+        --accent-gradient-fusion: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        --border-color: rgba(6, 182, 212, 0.25);
+        --border-glow: rgba(6, 182, 212, 0.6);
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+        --shadow-md: 0 4px 20px rgba(6, 182, 212, 0.25);
+        --shadow-lg: 0 10px 40px rgba(124, 58, 237, 0.35);
+        --glass-bg: rgba(15, 22, 35, 0.85);
+        --glass-border: rgba(6, 182, 212, 0.3);
+        --grid-color: rgba(6, 182, 212, 0.15);
+        --atom-glow: rgba(6, 182, 212, 0.6);
+    }
+}

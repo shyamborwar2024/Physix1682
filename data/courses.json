@@ -1,0 +1,35 @@
+{
+  "courses": [
+    {
+      "id": "semester1",
+      "title": "Engineering Physics - Semester 1",
+      "description": "Mechanics, Waves & Oscillations, Optics fundamentals",
+      "priceRegular": 7999,
+      "priceOffer": 1999,
+      "savings": 6000,
+      "level": "First Year",
+      "duration": "1 Semester"
+    },
+    {
+      "id": "semester2",
+      "title": "Engineering Physics - Semester 2",
+      "description": "Electromagnetism, Quantum Physics, Modern Physics",
+      "priceRegular": 7999,
+      "priceOffer": 1999,
+      "savings": 6000,
+      "level": "First Year",
+      "duration": "1 Semester"
+    },
+    {
+      "id": "fullYear",
+      "title": "Full First Year",
+      "description": "Both semesters + bonus content + exam preparation",
+      "priceRegular": 15998,
+      "priceOffer": 3998,
+      "savings": 12000,
+      "level": "First Year",
+      "duration": "2 Semesters"
+    }
+  ],
+  "note": "Prices from centralized configuration - update data/config.js to modify"
+}

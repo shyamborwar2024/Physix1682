@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | PHYSX ENGINEER</title>
+    <meta name="description" content="Your student dashboard for Engineering Physics Academy">
+</head>
+<body>
+    <section class="section" style="padding-top: 80px;">
+        <div class="container">
+            <h1>Student Dashboard</h1>
+            <p style="color: var(--text-secondary); margin-top: 8px;">Welcome, <strong data-student="name">Student</strong> · <span data-student="reg-id">Demo learning area</span></p>
+
+            <div class="dashboard-grid" id="stats-grid" style="margin-top: 32px;"></div>
+            <div class="live-status" id="dashboard-live-status" style="margin-top: 24px;" role="status">Checking class schedule…</div>
+
+            <div style="margin-top: 32px;">
+                <h2 style="margin-bottom: 16px;">Continue exploring</h2>
+                <div class="nav-card" data-link="classes.html" style="padding: 24px; background: var(--bg-primary); border-radius: 12px; border: 1px solid var(--border-color); cursor: pointer; margin-bottom: 16px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 8px;">View the live class schedule</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Weekdays · 8:00 PM–9:00 PM IST</p>
+                        </div>
+                        <a class="btn btn-primary" href="classes.html">View schedule</a>
+                    </div>
+                </div>
+
+                <div class="nav-card" data-link="tests.html" style="padding: 24px; background: var(--bg-primary); border-radius: 12px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 8px;">Practice Engineering Physics</h3>
+                            <p id="latest-result" style="color: var(--text-muted); font-size: 0.9rem;">No test attempts yet — try a demo test.</p>
+                        </div>
+                        <a class="btn btn-secondary" href="tests.html">Start a test</a>
+                    </div>
+                </div>
+                <div class="dashboard-quicklinks">
+                    <a href="study-material.html">Study material</a><a href="recorded-classes.html">Recordings</a><a href="ai-assistant.html">PHYSX AI demo</a><a href="doubts.html">Ask a question</a><a href="certificates.html">Certificate preview</a><a href="payment-history.html">Payment history</a><a href="profile.html">Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="data/config.js"></script><script src="js/site-shell.js"></script>
+</body>
+</html>

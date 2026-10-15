@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore interactive Engineering Physics simulations for motion, waves, optics and electromagnetism.">
+    <title>Interactive Physics Lab | PHYSX ENGINEER</title>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <main id="main-content">
+        <section class="hero page-hero"><div class="container hero-content"><div class="hero-badge"><span class="dot"></span> Interactive laboratory</div><h1>Turn a formula into a <span class="gradient-text">feeling.</span></h1><p class="hero-sub">Change a parameter. Watch what happens. Connect the model to the physics.</p></div></section>
+        <section class="section"><div class="container">
+            <div class="lab-container">
+                <div class="lab-canvas" id="lab-canvas"><canvas id="lab-simulation" aria-label="Animated physics simulation"></canvas><div class="lab-canvas-caption"><span id="lab-sim-title">Projectile motion</span><span>MODEL · NOT TO SCALE</span></div></div>
+                <aside class="lab-controls">
+                    <div class="section-label">Experiment controls</div><h2>Change a variable.</h2>
+                    <label class="control-label" for="lab-sim-select">Simulation</label>
+                    <select id="lab-sim-select" class="lab-sim-select">
+                        <option value="projectile">Projectile motion</option><option value="pendulum">Simple pendulum</option><option value="wave">Wave propagation</option><option value="lens">Convex lens</option><option value="electric">Electric field</option><option value="magnetic">Magnetic field</option><option value="quantum">Atomic energy levels</option>
+                    </select>
+                    <div class="control-group"><label for="lab-param-one"><span id="lab-label-one">Initial speed</span><output id="val1" for="lab-param-one">50</output></label><input id="lab-param-one" type="range" min="10" max="90" value="50"></div>
+                    <div class="control-group"><label for="lab-param-two"><span id="lab-label-two">Launch angle</span><output id="val2" for="lab-param-two">45</output></label><input id="lab-param-two" type="range" min="15" max="75" value="45"></div>
+                    <div class="control-group"><label for="lab-param-three"><span id="lab-label-three">Gravity</span><output id="val3" for="lab-param-three">9.8</output></label><input id="lab-param-three" type="range" min="2" max="20" value="10"></div>
+                    <div class="lab-live-value"><span>Live model</span><strong id="lab-live-value">Range ≈ 20.4 m</strong></div>
+                    <div class="lab-formula"><span class="section-label">PHYSICS MODEL</span><div id="lab-formula" class="formula-text">R = v² sin(2θ) / g</div><p id="lab-explanation">For an ideal projectile, the horizontal range depends on its launch speed, angle and gravitational acceleration.</p></div>
+                    <button class="btn btn-outline lab-reset" id="lab-reset" type="button">Reset this experiment</button>
+                </aside>
+            </div>
+            <p class="lab-disclaimer">Interactive visualizations are simplified teaching models. They are not experimental measurements or a substitute for your university's official course material.</p>
+        </div></section>
+        <section class="section section-alt"><div class="container"><div class="section-header"><div class="section-label">Explore by idea</div><h2 class="section-title">What would you like to see?</h2></div><div class="value-grid"><a href="#lab-sim-select" class="value-card" data-sim-link="projectile"><span>↗</span><h3>Mechanics</h3><p>Projectile motion &amp; pendulum</p></a><a href="#lab-sim-select" class="value-card" data-sim-link="wave"><span>∿</span><h3>Waves</h3><p>Propagation &amp; oscillation</p></a><a href="#lab-sim-select" class="value-card" data-sim-link="lens"><span>◉</span><h3>Optics</h3><p>Ray diagrams &amp; lenses</p></a><a href="#lab-sim-select" class="value-card" data-sim-link="electric"><span>⊕</span><h3>Electromagnetism</h3><p>Field direction &amp; charge</p></a><a href="#lab-sim-select" class="value-card" data-sim-link="quantum"><span>⌘</span><h3>Quantum physics</h3><p>Discrete atomic energy levels</p></a></div></div></section>
+    </main>
+    <script src="data/config.js"></script><script src="js/site-shell.js"></script>
+</body>
+</html>

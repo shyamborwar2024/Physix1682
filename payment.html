@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | PHYSX ENGINEER</title>
+    <meta name="description" content="Payment for Engineering Physics Academy courses">
+</head>
+<body>
+    <div class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <div class="hero-badge"><span class="dot"></span> Payment</div>
+            <h1>Complete Payment</h1>
+            <p class="hero-sub">Manual UPI instructions · confirm details with the academy before paying.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="form-card payment-card">
+                <h2 style="text-align: center; margin-bottom: 24px;">Course Enrollment</h2>
+
+                <div style="background: var(--bg-secondary); padding: 20px; border-radius: 12px; margin-bottom: 24px;">
+                    <h3 data-payment="course-title">Engineering Physics · Selected course</h3>
+                    <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                        <span>Regular Price:</span>
+                        <span style="text-decoration: line-through; color: var(--text-muted);"><strong data-payment="regular">₹7,999</strong></span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                        <span>Student Offer:</span>
+                        <span><strong data-payments="amount" style="color: var(--accent-secondary);">₹1,999</strong></span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                        <span>You Save:</span>
+                        <span><strong data-payment="saving" style="color: var(--success);">₹6,000</strong></span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin: 8px 0;">
+                        <span>Discount:</span>
+                        <span><strong data-payment="discount" style="color: var(--accent-tertiary);">75%</strong></span>
+                    </div>
+                </div>
+
+                <div class="qr-container">
+                    <img data-payment="qr" class="payment-qr" src="assets/qr/academy-payment-qr.png" alt="Academy payment QR code">
+                    <div class="qr-label">Scan &amp; pay with your UPI app</div>
+                    <div class="qr-upi">UPI ID: <span data-payment="upi">8149869721@ybl</span></div>
+                    <button type="button" class="btn btn-outline btn-sm" data-payment="copy-upi">Copy UPI ID</button>
+                    <p class="payment-demo-note">Manual UPI payment · Demo frontend only. Payment is not automatically verified.</p>
+                </div>
+
+                <div style="margin-top: 32px;">
+                    <h4>Payment Instructions</h4>
+                    <div style="margin-top: 12px;">
+                        <div style="margin-bottom: 8px;"><strong>1.</strong> Scan the QR code</div>
+                        <div style="margin-bottom: 8px;"><strong>2.</strong> Pay <strong data-payments="amount">₹1,999</strong> using your UPI app</div>
+                        <div style="margin-bottom: 8px;"><strong>3.</strong> Save your transaction reference and screenshot</div>
+                        <div style="margin-bottom: 8px;"><strong>4.</strong> Submit the confirmation form for manual review</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 32px; text-align: center;">
+                    <a data-payment="upi-pay" href="#" class="btn btn-secondary">Open UPI app</a>
+                    <a href="payment-confirmation.html" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 12px;">Submit payment confirmation</a>
+                    <p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">Registration <strong data-payment="reg-id">—</strong> · <span data-payment="name">Student</span></p>
+                    <button type="button" class="btn btn-outline btn-sm" data-payment="whatsapp">Send details on WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="data/config.js"></script><script src="js/site-shell.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "universities": [
+    {
+      "id": "SPPU",
+      "name": "Savitribai Phule Pune University"
+    },
+    {
+      "id": "University of Mumbai",
+      "name": "University of Mumbai"
+    },
+    {
+      "id": "DBATU",
+      "name": "Dr. Babasaheb Ambedkar Technological University"
+    },
+    {
+      "id": "RTMNU",
+      "name": "Rashtrasant Tukadoji Maharaj Nagpur University"
+    },
+    {
+      "id": "Shivaji University",
+      "name": "Shivaji University"
+    },
+    {
+      "id": "Other",
+      "name": "Other"
+    }
+  ],
+  "supportNote": "Demo syllabus - subject to replacement with latest official university syllabus",
+  "verificationNote": "Students should verify the latest official syllabus issued by their respective university."
+}

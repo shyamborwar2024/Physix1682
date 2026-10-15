@@ -1,0 +1,26 @@
+# robots.txt for Engineering Physics Academy
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Disallow private pages
+Disallow: /admin/
+Disallow: /login.html
+Disallow: /payment.html
+Disallow: /payment-confirmation.html
+Disallow: /dashboard.html
+Disallow: /my-course.html
+Disallow: /recorded-classes.html
+Disallow: /notes.html
+Disallow: /results.html
+Disallow: /progress.html
+Disallow: /certificates.html
+Disallow: /doubts.html
+Disallow: /ai-assistant.html
+Disallow: /profile.html
+Disallow: /payment-history.html
+
+# Crawl-delay
+Crawl-delay: 10

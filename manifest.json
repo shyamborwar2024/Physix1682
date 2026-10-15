@@ -1,0 +1,18 @@
+{
+  "name": "PHYSX ENGINEER",
+  "short_name": "Physics Academy",
+  "description": "Engineering Physics learning made visual and practical.",
+  "theme_color": "#091329",
+  "background_color": "#091329",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "./",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "assets/icons/physx-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

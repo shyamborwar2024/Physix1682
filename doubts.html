@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Save an Engineering Physics doubt in a local browser demo."><title>Doubt support | PHYSX ENGINEER</title></head>
+<body>
+<main id="main-content">
+    <section class="hero page-hero"><div class="container hero-content"><div class="hero-badge"><span class="dot"></span> STUDENT SUPPORT · DEMO</div><h1>Every question is a <span class="gradient-text">good start.</span></h1><p class="hero-sub">Describe what you are working through. This demo saves your note only in this browser.</p></div></section>
+    <section class="section"><div class="container"><div class="form-card">
+        <form id="doubt-form">
+            <div class="form-group"><label for="doubt-question">Your question *</label><textarea id="doubt-question" name="question" rows="5" maxlength="1500" required placeholder="What part of the concept or problem is unclear?"></textarea></div>
+            <div class="form-row"><div class="form-group"><label for="doubt-university">University</label><select id="doubt-university" name="university"><option>SPPU</option><option>University of Mumbai</option><option>DBATU</option><option>RTMNU</option><option>Shivaji University</option><option>Other</option></select></div><div class="form-group"><label for="doubt-semester">Semester</label><select id="doubt-semester" name="semester"><option>Semester 1</option><option>Semester 2</option></select></div></div>
+            <div class="form-row"><div class="form-group"><label for="doubt-topic">Chapter or topic</label><input id="doubt-topic" name="topic" maxlength="100"></div><div class="form-group"><label for="doubt-attachment">Optional image or PDF</label><input id="doubt-attachment" name="attachment" type="file" accept="image/*,.pdf"></div></div>
+            <p class="demo-notice">Local demo storage: your attachment is not uploaded or saved. Please do not include sensitive information.</p>
+            <button type="submit" class="btn btn-primary">Save question on this device</button>
+        </form>
+    </div><div id="doubt-list" class="doubt-list" aria-live="polite"></div></div></section>
+</main>
+<script src="data/config.js"></script><script src="js/site-shell.js"></script>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus | PHYSX ENGINEER</title>
+    <meta name="description" content="Multi-university Engineering Physics syllabus selector">
+</head>
+<body>
+    <div class="hero" style="min-height: 40vh;">
+        <div class="hero-content">
+            <div class="hero-badge"><span class="dot"></span> Syllabus Selector</div>
+            <h1>Multi-University Syllabus</h1>
+            <p class="hero-sub">Select your university and academic pattern</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="syllabus-selector">
+                <div class="selector-grid">
+                    <div class="selector-group">
+                        <label>Select University</label>
+                        <select id="university-select">
+                            <option value="">Select University</option>
+                        </select>
+                    </div>
+                    <div class="selector-group">
+                        <label>Select Academic Pattern</label>
+                        <select id="pattern-select">
+                            <option value="">Select Academic Pattern</option>
+                        </select>
+                    </div>
+                    <div class="selector-group">
+                        <label>Select Semester</label>
+                        <select id="semester-select">
+                            <option value="">Select Semester</option>
+                        </select>
+                    </div>
+                    <div class="selector-group">
+                        <label>Select Subject</label>
+                        <select id="subject-select">
+                            <option value="">Select Subject</option>
+                        </select>
+                    </div>
+                    <div class="selector-group">
+                        <label>Select Unit</label>
+                        <select id="unit-select">
+                            <option value="">Select Unit</option>
+                        </select>
+                    </div>
+                    <div class="selector-group">
+                        <label>Select Chapter</label>
+                        <select id="chapter-select">
+                            <option value="">Select Chapter</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="syllabus-display">
+                    <p>Please complete all selections to view syllabus preview.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin: 40px 0;">
+        <p class="disclaimer" style="text-align: center; color: var(--text-muted);">
+            DEMO SYLLABUS - SUBJECT TO REPLACEMENT WITH LATEST OFFICIAL UNIVERSITY SYLLABUS<br>
+            Students should verify the latest official syllabus issued by their respective university.
+        </p>
+    </div>
+    <script src="data/config.js"></script><script src="js/site-shell.js"></script>
+</body>
+</html>

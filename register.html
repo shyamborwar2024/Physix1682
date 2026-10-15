@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | PHYSX ENGINEER</title>
+    <meta name="description" content="Register for Engineering Physics Academy courses">
+</head>
+<body>
+    <div class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <div class="hero-badge"><span class="dot"></span> Registration</div>
+            <h1>Create Your Account</h1>
+            <p class="hero-sub">Create a demo registration and review your course payment details.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="form-card" style="margin-top: 40px;">
+                <h2 style="text-align: center; margin-bottom: 24px;">Student Registration</h2>
+
+                <form id="registration-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="FullName">Full Name *</label>
+                            <input type="text" id="FullName" name="FullName" required>
+                            <div id="FullName-error" class="form-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Mobile">Mobile Number *</label>
+                            <input type="tel" id="Mobile" name="Mobile" required placeholder="e.g., 9876543210">
+                            <div id="Mobile-error" class="form-error"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="Email">Email *</label>
+                            <input type="email" id="Email" name="Email" required placeholder="student@example.com">
+                            <div id="Email-error" class="form-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="University">University *</label>
+                            <select id="University" name="University" required>
+                                <option value="">Select University</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="Branch">Branch *</label>
+                            <select id="Branch" name="Branch" required></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Year">Year *</label>
+                            <select id="Year" name="Year" required>
+                                <option value="">Select Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="College">College</label>
+                            <input type="text" id="College" name="College" maxlength="120" autocomplete="organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="AcademicYear">Academic year</label>
+                            <input type="text" id="AcademicYear" name="AcademicYear" placeholder="e.g. 2026–27" maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="Course">Course *</label>
+                            <select id="Course" name="Course" required>
+                                <option value="">Select Course</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 24px;">
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Continue to Payment</button>
+                    </div>
+
+                    <div style="margin-top: 20px; text-align: center; font-size: 0.8rem; color: var(--text-muted);">
+                        <p>By registering, you agree to our Terms & Conditions</p>
+                        <div style="margin-top: 8px;">
+                            <a href="login.html" style="color: var(--accent-secondary);">Already have an account? Login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin: 40px 24px; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+        <p>Need help? Email <a href="mailto:engineeringphysicsacademy@gmail.com">engineeringphysicsacademy@gmail.com</a> or <a data-whatsapp-inquiry="general" href="https://wa.me/7030336540">ask the academy on WhatsApp</a>.</p>
+    </div>
+    <script src="data/config.js"></script><script src="js/site-shell.js"></script>
+</body>
+</html>

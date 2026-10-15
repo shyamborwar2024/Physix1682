@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Practice Engineering Physics with interactive demo quizzes and review your results.">
+    <title>Practice tests | PHYSX ENGINEER</title>
+</head>
+<body>
+    <main id="main-content">
+        <section class="hero page-hero"><div class="container hero-content"><div class="hero-badge"><span class="dot"></span> Practice studio</div><h1>Test what you <span class="gradient-text">understand.</span></h1><p class="hero-sub">Short, focused Engineering Physics practice with results you can learn from.</p></div></section>
+        <section class="section"><div class="container test-container">
+            <div id="test-intro" class="test-intro-card">
+                <div class="section-label">DEMO TEST · 10 QUESTIONS</div>
+                <h2>Choose a semester to begin.</h2>
+                <p>This sample quiz runs in your browser. Your answers and results stay on this device.</p>
+                <label class="test-select-label" for="test-type">Course</label>
+                <select id="test-type" class="lab-sim-select"><option value="semester1">Semester 1 · mechanics, waves &amp; quantum</option><option value="semester2">Semester 2 · electromagnetism &amp; optics</option></select>
+                <div class="test-start-meta"><span>10 questions</span><span>10 minute timer</span><span>Review answers before submitting</span></div>
+                <button id="start-test" class="btn btn-primary btn-lg">Start demo test <span aria-hidden="true">→</span></button>
+            </div>
+            <div id="test-active" hidden>
+                <div class="test-toolbar"><div><span class="section-label">DEMO PRACTICE</span><h2 id="test-course-title">Semester 1</h2></div><div class="test-timer" aria-live="off">10:00</div></div>
+                <div id="test-container"></div>
+            </div>
+        </div></section>
+    </main>
+    <script src="data/config.js"></script><script src="js/site-shell.js"></script>
+</body>
+</html>

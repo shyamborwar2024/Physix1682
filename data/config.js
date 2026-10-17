@@ -35,12 +35,12 @@ const ACADEMY_CONFIG = {
     },
     socialLinks: {
         // Demo platform links; replace each with the academy's official profile URL.
-        instagram: "https://www.instagram.com/",
-        linkedin: "https://www.linkedin.com/",
-        youtube: "https://www.youtube.com/",
-        facebook: "https://www.facebook.com/",
+        instagram: "https://www.instagram.com/engineering_physics_academy",
+        linkedin: "https://www.linkedin.com/in/engineering-physics-academy-dr-shyam-a26519443",
+        youtube: "https://www.youtube.com/channel/UC5jzebGvWWlpjiLLUb34RCw",
+        facebook: "https://www.facebook.com/profile.php?id=61595366851934",
         twitter: "https://x.com/",
-        telegram: "https://t.me/"
+        telegram: "https://t.me/+olw5HtnwAg9lZDJl"
     },
     liveClassLink: "#",
     demoGoogleForm: "#"
